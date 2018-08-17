@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search Crimes</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="manifest" href="manifest.json">
+</head>
+<body background="assets/1.jpg">
+	<div class="container">
+
+		<h1 class="heading">SEARCH CRIMES</h1>
+
+		<input type="text" id="selectedCategory" required list="category-box" class="combo-box" placeholder="Select Category">
+        <datalist id="category-box"></datalist>
+
+        <input type="text" id="selectedForce" required list="forces-box" class="combo-box" placeholder="Select Force">
+        <datalist id="forces-box"></datalist>	
+
+		<center>
+			<button class="btn-search" onclick="search()">Search</button>				
+		</center>
+
+	</div>
+
+	
+	<table align="center" id="tables">
+		<tr>
+			<th>#</th>
+			<th>Id</th>
+			<th>Category</th>
+			<th>Date</th>
+			<th>Status</th>
+		</tr>
+	</table>
+	
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
